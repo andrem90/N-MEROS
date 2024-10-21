@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da forca 1ª versão</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo de Adivinhar o Número</h1>
+        <p>Tente adivinhar o número entre 0 e 999</p>
+        <div id="numero-secreto">
+            <span class="digito">_</span>
+            <span class="digito">_</span>
+            <span class="digito">_</span>
+        </div>
+        <div id="tentativas">Tentativas restantes: <span id="tentativas-restantes">5</span></div>
+        <div id="numero-atual"></div>
+        <div id="numeros-botoes">
+            <button class="numero-btn" data-numero="0">0</button>
+            <button class="numero-btn" data-numero="1">1</button>
+            <button class="numero-btn" data-numero="2">2</button>
+            <button class="numero-btn" data-numero="3">3</button>
+            <button class="numero-btn" data-numero="4">4</button>
+            <button class="numero-btn" data-numero="5">5</button>
+            <button class="numero-btn" data-numero="6">6</button>
+            <button class="numero-btn" data-numero="7">7</button>
+            <button class="numero-btn" data-numero="8">8</button>
+            <button class="numero-btn" data-numero="9">9</button>
+            <button id="backspace">⌫</button>
+            <button id="enter">Enter</button>
+        </div>
+        <div id="numeros-selecionados"></div>
+        <div id="mensagem"></div>
+        <button id="jogar-novamente">Jogar de Novo</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

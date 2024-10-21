@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+}
+
+.container {
+    background-color: #1e1e1e; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #ff4000; 
+}
+
+#numero-secreto {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.digito {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 2px solid #f2ff00; /* Borda laranja para os dígitos */
+    margin: 0 5px;
+}
+
+#tentativas {
+    color: #0390f49c; 
+}
+
+#numeros-botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.numero-btn {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #6da6f1; /* Verde escuro para os botões */
+    color: #e0e0e0; /* Texto claro nos botões */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+.numero-btn:hover {
+    transform: translateY(-3px); /* Eleva o botão ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra ao passar o mouse */
+}
+
+.numero-btn:active {
+    transform: translateY(1px); /* Move o botão para baixo ao clicar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra reduzida ao clicar */
+}
+
+/* Estilos para os botões Backspace e Enter */
+#backspace, #enter {
+   grid-column: span 2; /* Ocupa duas colunas na grade */
+   background-color: #ff5722; /* Cor de fundo mais vibrante */
+   color: #ffffff; /* Texto branco para melhor contraste */
+   font-weight: bold; /* Negrito para destaque */
+   padding: 15px; /* Aumenta o padding para maior área clicável */
+   border-radius: 8px; /* Bordas arredondadas mais suaves */
+   transition: all 0.3s ease; /* Transição suave */
+}
+
+#backspace:hover, #enter:hover {
+   background-color: #ff7043; /* Cor mais clara ao passar o mouse */
+   transform: translateY(-3px); /* Eleva o botão ao passar o mouse */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra ao passar o mouse */
+}
+
+#backspace:active, #enter:active {
+   transform: translateY(1px); /* Move o botão para baixo ao clicar */
+   box-shadow: none; /* Remove a sombra ao clicar */
+}
+
+#jogar-novamente {
+   font-size: 16px;
+   padding: 10px 20px;
+   background-color: #ff2922; 
+   color: #e0e0e0; 
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-top: 20px;
+}
+
+#jogar-novamente:hover {
+   background-color: #ff7043; 
+}
+
+#jogar-novamente:active {
+   transform: translateY(1px);
+}
+
+#numeros-escolhidos, #numero-atual {
+   font-size: 19px;
+   margin: 11px 0;
+}
+
+#mensagem {
+   font-size: 18px;
+   font-weight: bold;
+}
